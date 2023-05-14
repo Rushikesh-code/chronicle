@@ -1,0 +1,40 @@
+
+.btn{
+    height:6%;
+    width:8%;
+    border-radius: 12px;;
+    align-items: end;
+    margin-left: 90%;
+    overflow: hidden;
+    margin-top: 2.5%;
+    outline: none;
+}
+.btn:hover {
+    background-color: #8B8ECC;
+}
+.button{
+    width: 100%
+}
+.btn:hover h3:nth-child(1){
+    transform: translateY(-100%);
+    opacity: 0;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h3 {
+    margin: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: slideIn 0.5s ease-in-out;
+}
+.disable-scroll {
+    overflow: hidden;
+}
